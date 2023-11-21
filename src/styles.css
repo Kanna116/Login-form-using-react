@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/8801100/pexels-photo-8801100.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.login-container {
+  width: 50%;
+  max-width: 400px;
+  min-width: 300px;
+  height: fit-content;
+  padding: 50px 30px;
+  border-radius: 20px;
+  background-color: #ffffff30;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0 20px #00000080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+}
+.login-form {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.form-set {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.login-form input,
+.login-form label {
+  width: 100%;
+  letter-spacing: 1px;
+}
+.login-form label {
+  font-size: 20px;
+  font-weight: 900;
+}
+.login-form input {
+  padding: 0px 20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 50px;
+  border: 0.5px solid #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+.login-form input:focus {
+  outline: transparent;
+  border: 1px solid red;
+}
+.login-form button {
+  padding: 10px 40px;
+  margin-top: 10px;
+  border-radius: 50px;
+  border: 0.5px solid #fff;
+  background-color: #fff;
+  /* background-color: transparent; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  transition: all 200ms ease;
+}
+.login-form button:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+.login button:focus {
+  outline: transparent;
+}
+
+.submitted-box {
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 20px;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 30px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
